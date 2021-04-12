@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TIP calculator</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <h2>Tip calculator</h2>
+
+        <!--First block-->
+        <div class="bulgy-radios">   
+            <h3>How much was your bill?</h3>
+
+            <div class="textbox-div-container">
+                <label class="label-container">
+                    <input type="text" id="bill_amount" name="bill_amount">
+                </label>
+            </div> 
+        </div>
+
+        <!--Second block-->
+        <div class="bulgy-radios" role="radiogroup" aria-labelledby="bulgy-radios-label">
+            <h3>How was your service?</h3>
+
+            <!--The first way to use radio buttons-->
+            <div class="checkbox-div-container">
+                <label class="label-container">
+                    <input type="radio" name="radio" value="0">
+                    <span class="checkmark">0% (very bad)</span>
+                </label>
+                <label class="label-container">
+                    <input type="radio" name="radio" value="25">
+                    <span class="checkmark">25% (bad)</span>
+                </label>
+                <label class="label-container">
+                    <input type="radio" name="radio" value="50" checked="checked">
+                    <span class="checkmark">50% (okay)</span>
+                </label>
+                <label class="label-container">
+                    <input type="radio" name="radio" value="75">
+                    <span class="checkmark">75% (good)</span>
+                </label>
+                <label class="label-container">
+                    <input type="radio" name="radio" value="100">
+                    <span class="checkmark">100% (very good)</span>
+                </label>
+            </div>
+
+            <!--The second way to use radio buttons
+            <div class="checkbox-div-container" style="border: 1px solid black;">
+                
+                <input type="radio" checked="checked" name="radio2" value="0">
+                <label class="simple-label" for="radio">0% (very bad)</label> <br>
+
+                <input type="radio" name="radio2" value="25">
+                <label class="simple-label" for="radio">25% (bad)</label> <br>
+
+                <input type="radio" name="radio2" value="50">
+                <label class="simple-label" for="radio">50% (okay)</label> <br>
+
+                <input type="radio" name="radio2" value="75">
+                <label class="simple-label" for="radio">75% (good)</label> <br>
+
+                <input type="radio" name="radio2" value="100">
+                <label class="simple-label" for="radio">100% (very good)</label>
+
+            </div>
+            -->
+            
+        </div>
+
+        <!--Third block-->
+        <div class="bulgy-radios">  
+            <h3>How many people are sharing the bill?</h3>
+
+            <div class="textbox-div-container">
+                <label class="label-container">
+                    <input type="text" id="people_number" name="people_number">
+                </label>
+            </div> 
+        </div>
+
+        <!--Fourth block-->
+        <div class="button-block">
+            <!--<input type="button" id="cpsi" value="Cost PSI" onclick="tipCalc()">-->
+            <button onclick="tipCalc()" class="btn">
+                <i class="fa fa-calculator"></i>
+                <div style="padding-left: 7px; display: inline-block;">Calculate</div>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
